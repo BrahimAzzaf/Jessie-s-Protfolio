@@ -1,0 +1,176 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Start root */
+:root{
+    --primary-color:hsl(0, 0%, 93%);
+    --secondary-color:hsla(0, 0%, 100%, 0.6);
+    --green-color:#00aab3;
+    --font-family-Jose: 'Josefin Sans', sans-serif;
+    --font-family-Monts: 'Montserrat', sans-serif;
+    --font-family-Popp: 'Poppins', sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h4{
+    color: #EEE;
+    font-family: var(--font-family-Jose);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.primary-btn{
+    color: #000;
+    font-family: var(--font-family-Jose);;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 3px;
+    background: #EEE;
+    cursor: pointer;
+}
+
+h1{
+    color: #00ADB5;
+    font-family: var(--font-family-Monts);
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 6px;
+}
+
+
+h3{
+    color: #00ADB5;
+    font-family: var(--font-family-Monts);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 30px; /* 125% */
+    letter-spacing: 0.96px;
+}
+.paragraphe{
+    color: #EEE;
+    font-family: var(--font-family-Popp);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.72px;
+}
+.paragraphe-small{
+    color: rgba(255, 255, 255, 0.60);
+    font-family: var(--font-family-Popp);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: 0.64px;
+}
+/* end root */
+.wrapper{
+    margin: 0;
+    padding: 0;
+    background: url(./images/rectangle-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.container{
+    padding-top: 10px;
+    width: 1200px;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    color: #EEE;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: var(--font-family-Jose);
+}
+nav ul li a:hover,
+:focus{
+    color: var(--green-color);
+}
+nav button:hover{
+    background-color: transparent;
+    border: 1px solid var(--green-color);
+}
+header .home{
+    padding-top: 100px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 120px;
+    align-items: center;
+}
+header .profession h3{
+    padding-bottom: 300px;
+}
+header .profession h4{
+    margin-left: 10px;
+}
+header .profession > div {
+    display: flex;
+    align-items:baseline ;
+}
+
+header .about-Jessie{
+    align-items: end;
+    width: 500px;
+    margin-left: 418px;
+}
+
+/* shots */
+.shots{
+    padding-top: 100px;
+}
+
+.shots-head{
+    display: flex;
+    justify-content: space-between;
+}
+.shots-head a{
+    text-decoration: none;
+    color: var(--green-color);
+}
+
+.shots-images{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;   
+    width: fit-content;
+}
+
+.shots-images img{
+    
+    width: 189px;
+    margin: 0;
+    height: 113px;
+    flex-shrink: 0;
+}
+.shots-images :last-child{
+    width: fit-content;
+}
+.arrows{
+    display: flex;
+}
