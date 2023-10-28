@@ -115,6 +115,7 @@ nav ul li a:hover,
 nav button:hover{
     background-color: transparent;
     border: 1px solid var(--green-color);
+    color: var(--green-color);
 }
 header .home{
     padding-top: 100px; 
